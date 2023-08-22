@@ -21,10 +21,11 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         password: ${{ secrets.SERVER_PASSWORD }}
         script: |
+          rm -rf MyPersonalWebsite
           git clone https://github.com/JamesClarke7283/MyPersonalWebsite
           cd MyPersonalWebsite
-          docker build -t jameses-personal-website .
           docker container stop jameses-personal-website || true
           docker container rm jameses-personal-website || true
+          docker build -t jameses-personal-website .
           docker run -d --name jameses-personal-website -p 15066:1313 jameses-personal-website:latest
           echo "Website is running on port 15066"

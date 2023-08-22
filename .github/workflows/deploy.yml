@@ -1,0 +1,30 @@
+name: Deploy H.U.G.O Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_HOST }}
+        port: 1024
+        username: ${{ secrets.SERVER_USERNAME }}
+        password: ${{ secrets.SERVER_PASSWORD }}
+        script: |
+          git clone https://github.com/JamesClarke7283/MyPersonalWebsite
+          cd MyPersonalWebsite
+          docker build -t jameses-personal-website .
+          docker container stop jameses-personal-website || true
+          docker container rm jameses-personal-website || true
+          docker run -d --name jameses-personal-website -p 15066:1313 jameses-personal-website:latest
+          echo "Website is running on port 15066"

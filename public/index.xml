@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on James&#39;s Website</title>
+    <link>https://jamesdavidclarke.com/</link>
+    <description>Recent content in Home on James&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 21 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://jamesdavidclarke.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>https://jamesdavidclarke.com/contact/</link>
+      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://jamesdavidclarke.com/contact/</guid>
+      <description>Contact Details Note: This is the best way to reach me. Reach-ability lowers from top to bottom. For example, Signal and Matrix are the fastest ways to reach me, while Telegram is the slowest way.
+My Contact Info Service Details Signal +44 7459 945702 Matrix @james:james-clarke.ynh.fr XMPP james@james-clarke.ynh.fr Email james@james-clarke.ynh.fr Tox James Clarke Briar James Clarke Telegram +44 7962 665125 Note: Please note these telephone numbers do not work with SMS/Calling, so you have to use them for Signal/Telegram, respectively.</description>
+    </item>
+    
+  </channel>
+</rss>

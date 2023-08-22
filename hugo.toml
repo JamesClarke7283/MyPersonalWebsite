@@ -1,0 +1,11 @@
+baseURL = 'https://jamesdavidclarke.com'
+languageCode = 'en-gb'
+title = "James's Website"
+theme = 'vanilla-bootstrap-hugo-theme'
+
+
+[[menu.nav]]
+    pre = "smile"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3

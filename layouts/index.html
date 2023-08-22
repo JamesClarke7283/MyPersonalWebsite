@@ -1,0 +1,62 @@
+{{define "main"}}
+
+
+<div class="container-fluid text-center">
+    <h1 class="mb-3 fw-semibold">
+        Here you will find many projects Ive worked on, tutorials &amp; blog posts.
+    </h1>
+    <p>
+        <a class="btn btn-default btn-primary btn-lg" href="/contact" role="button">Contact Details</a>
+    </p>
+    <p>
+        &nbsp;
+    </p>
+</div>
+<div class="row">
+    <div class="col-lg-4">
+        {{ partial "feather_icons.html" (dict "name" "heart" "size" 128) }}
+
+        <h1>
+            Freedom
+        </h1>
+        <p>
+            All software I develop is free as in freedom
+        </p>
+        <p>
+            <a class="btn btn-default btn-info" href="https://git.jamesdavidclarke.com/james/" role="button">View details »</a>
+        </p>
+    </div>
+    <div class="col-lg-4">
+        {{ partial "feather_icons.html" (dict "name" "book-open" "size" 128) }}
+        <h1>
+            Tutorials
+        </h1>
+        <p>
+            I provide tutorials on many subjects including GNU/Linux, Python, Assembly, etc
+        </p>
+        <p>
+            <a class="btn btn-default btn-info" href="https://jamesdavidclarke.com/tutorials" role="button">View details »</a>
+        </p>
+    </div>
+    <div class="col-lg-4">
+        {{ partial "feather_icons.html" (dict "name" "briefcase" "size" 128) }}
+        <h1>
+            Services
+        </h1>
+        <p>
+            Provide services such as email marketing and bespoke software solutions
+        </p>
+        <p>
+            <a class="btn btn-default btn-info" href="https://www.savvysenders.com/" role="button">View details »</a>
+        </p>
+    </div>
+</div>
+<p>
+    &nbsp;
+</p>
+<div class="alert alert-info" role="alert">
+    <p>
+        <em><strong>Disclaimer</strong></em>: The art assets from the above section are from <a href="https://github.com/feathericons/feather/"><em><strong>Feather Icons,</strong></em></a><em><strong> </strong></em>Copyright/License statement for those works are <a href="https://raw.githubusercontent.com/feathericons/feather/master/LICENSE"><em><strong>here</strong></em></a>
+    </p>
+</div>
+{{end}}
